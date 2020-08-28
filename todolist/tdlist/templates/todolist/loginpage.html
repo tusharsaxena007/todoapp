@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login view</title>
+</head>
+<body>
+<form action="loginpage" method="POST">
+    {% csrf_token %}
+{{form.as_p}}
+
+    <input type="submit" value="login">
+</form>
+<a href="newuser"> Create a new account </a>
+</body>
+</html>
