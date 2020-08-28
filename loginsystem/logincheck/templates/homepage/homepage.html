@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>homepage</title>
+</head>
+<body>
+<h1>Blogs of the user</h1>
+{% for i in blogs %}
+<br>
+{{i.heading}}
+{{i.subheading}}
+{{i.text}}
+{{i.likes_count}}
+{{i.dislikes_count}}
+<a href="share/{{i.pk}}">Share</a>
+<a href="deleteblog/{{i.pk}}">Delete</a>
+<A href="edit/{{i.pk}}">Edit</a>
+<hr>
+<hr>
+<br><br>
+{% endfor %}
+<a href="shareall">Share All</a>
+
+<br><hr><a href='createnewblog'> Create a new blog </a><hr>
+<a href="logout">Logout</a>
+
+</body>
+</html>

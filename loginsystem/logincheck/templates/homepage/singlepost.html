@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>akela blogpost</title>
+</head>
+<body>
+{{blog.heading}}
+<br>
+{{blog.subheading}}
+<br>
+{{blog.text}}
+<br>
+
+like  = {{blog.likes_count}}
+dislike = {{blog.dislikes_count}}
+
+
+<a href="likecount/{{blog.pk}}">Like</a>
+<a href="dislikecount/{{blog.pk}}">Dislike</a>
+
+
+<p><h3>Copy and paste the url whereever needed </h3>
+{{ url }}
+</body>
+</html>

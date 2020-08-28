@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ALL BLOGS</title>
+</head>
+<body>
+{% for i in blogs %}
+
+{{i.heading}}
+<br>
+{{i.subheading}}
+<br>
+{{i.text}}
+<br>
+<a href="likecount/{{i.pk}}">Like</a>
+<a href="dislikecount/{{i.pk}}">Dislike</a>
+
+{% endfor %}
+</body>
+</html>
