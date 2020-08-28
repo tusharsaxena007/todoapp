@@ -9,9 +9,9 @@ class list_input(forms.ModelForm):
             model = List
             exclude = ('datetimemade','user',)
 
-class loginform(forms.ModelForm):
-       class Meta:
-           model = User
-           fields = ['username','password']
+class loginform(forms.Form):
+       username = forms.CharField(max_length=30)
+       password = forms.CharField(widget=forms.PasswordInput())
+
 
 
